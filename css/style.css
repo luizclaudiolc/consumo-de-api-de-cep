@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url(https://thumbs.dreamstime.com/b/clean-top-view-day-time-city-map-street-river-blank-urban-imagination-vector-illustration-178995587.jpg);
+    background-size: cover;
+}
+
+.container {
+    padding: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 500px;
+    border: 1px transparent;
+    border-radius: 5px;
+    background: linear-gradient(#cece, #fff)
+}
+
+.container h1 {
+    text-align: center;
+    text-shadow: 2px 4px 6px rgba(0,0,0,.75);
+}
+
+#gps {
+    color: rgb(28, 149, 248);
+    animation: rotate 10s linear infinite;
+}
+
+#globe:hover{
+    color:  rgb(28, 149, 248);
+    transition: 1.5s;
+}
+
+#git {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    text-shadow: 0 0 50px rgba(150,0,0,1.5), 
+                0 0 100px rgba(150,0,0,1.5),
+                0 0 150px rgba(150,0,0,1.5),
+                0 0 200px rgba(150,0,0,1.5);
+    animation: anime 5s linear infinite;
+}
+
+#git:hover {
+    font-size: 2.5rem;
+    transition: 1s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes anime {
+    0% {
+        fill: hue-rotate(0deg);
+    }
+    100% {
+        fill: hue-rotate(360deg);
+    }
+}
